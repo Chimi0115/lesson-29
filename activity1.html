@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Activity 1</title>
+    </head>
+    <body>
+        <h2>JSON in JS</h2>
+        <p id="p1"></p>
+        <p id="p2"></p>
+        <script>
+            var student={'Name': 'Tshultrim', 'Grade':8};
+            var JSONStud=JSON.stringify(student);
+            var RecStud=JSON.parse(JSONStud);
+            document.getElementById("p1").innerHTML="Name of student is " +RecStud.Name;
+            document.getElementById("p2").innerHTML="Grade of student is " +RecStud["Grade"];
+        </script>
+    </body>
+</html>
